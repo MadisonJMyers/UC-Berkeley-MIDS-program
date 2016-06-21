@@ -1,0 +1,4 @@
+Are average scores for hospital quality or procedural variability correlated with patient survey responses?
+
+I would first break the question down and look at average scores for hospital quality and then also average scores for procedural variability.
+I would then need to see if there is a correlation with patient survey responses.
