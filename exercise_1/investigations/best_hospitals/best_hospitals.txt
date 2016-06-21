@@ -1,0 +1,3 @@
+What hospitals are models of high quality care? That is, which hospitals have the most consistently high scores for a variety of procedures.
+
+For this part of the exercise it is important to look at the hvbp-hcahps_05_28_2015 file that I saved as surveys_responses.
