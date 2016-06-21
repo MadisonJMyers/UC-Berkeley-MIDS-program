@@ -1,0 +1,4 @@
+Which procedures have the greatest variability between hospitals?
+
+Because the question focuses on procedures, I would use the same data file (surveys_responses or hvbp-hcahps_05_28_2015) 
+and look at procedure variances. I would then narrow it down by hospital id and look at the greatest variability.
