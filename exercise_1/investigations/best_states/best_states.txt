@@ -1,0 +1,4 @@
+What states are models of high-quality care?
+
+Again, I looked at the surveys_responses data file in order to determine an answer. Unfortunately I ran out of time and will need to come back to this.
+The aim would be to look at which states have the highest average scores and then rank them.
