@@ -1,1 +1,26 @@
+#Hospitals SQL query
 
+DROP TABLE IF EXISTS hospitals_tr;
+CREATE TABLE hospitals_tr row format delimited AS SELECT provider_id, hospital_name, city, state, hospital_type, emergency_services FROM hospitals;
+
+#Effective Care SQL query
+
+DROP TABLE IF EXISTS effective_care_tr;
+CREATE TABLE effective_care_tr row format delimited AS SELECT provider_id, hospital_name, city, state, condition, measure_id, measure_name, CAST(score AS INT), sample, footnote, CAST(measure_start_date AS DATE), CAST(measure_end_date AS DATE) FROM effective_care;
+
+
+#Readmissions SQL query
+
+DROP TABLE IF EXISTS readmissions_tr;
+CREATE TABLE readmissions_tr row format delimited AS SELECT provider_id, hospital_name, city, state, condition, measure_id, compared_to_national, denominator, score, lower_estimate, higher_estimate, footnote, measure_start_date, measure_end_date FROM readmissions;
+
+
+#Measures SQL query
+
+DROP TABLE IF EXISTS Measures_tr;
+CREATE TABLE Measures_tr row format delimited AS SELECT provider_id, measure_id, condition, measure_name, CAST(score AS INT), sample, footnote, CAST(measure_start_date AS DATE), CAST(measure_end_date AS DATE) FROM Measures;
+
+#Surveys-Responses SQL query
+
+DROP TABLE IF EXISTS surveys_responses_tr;
+CREATE TABLE surveys_responses_tr row format delimited AS SELECT provider_id, hospital_name, city, state, Communication_with_Nurses_Improvement_Points, Communication_with_Doctors_Improvement_Points, Responsiveness_of_Hospital_Staff_Improvement_Points, Pain_Management_Improvement_Points, Communication_about_Medicines_Improvement_Points, Cleanliness_and_Quietness_of_Hospital_Environment_Improvement_Points, Discharge_Information_Improvement_Points, Overall_Rating_of_Hospital_Improvement_Points FROM surveys_responses;
